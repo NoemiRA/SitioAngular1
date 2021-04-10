@@ -1,8 +1,28 @@
-<div class="hero-detail" *ngIf = "hero">
-  <h2>{{hero.name | uppercase}} <br> Detalles</h2>
-  <div><span class="badge"> id: </span>{{hero.id}}</div>
+<div  *ngIf = "hero">
+  <h2>{{hero.name | uppercase}} </h2>
+  <h3>Detalles</h3>
+  <div><span > id: </span>{{hero.id}}</div>
   <div>
     <label for="hero-name">Heroe Nombre: </label>
     <input id ="hero-name" [(ngModel)]="hero.name" placeholder="name">
+  </div>
+  <div>
+    <label for = "hero-edad">Edad: </label>
+      <input id="hero-edad" [(ngModel)]="hero.edad" placeholder="Edad Heroe">
+  </div>
+
+  <div>
+    <label for = "hero-poder">Poder: </label>
+      <input id="hero-poder" [(ngModel)]="hero.poder" placeholder="Poder Heroe">
+  </div>
+
+  <div>
+    <label for = "hero-universo">Universo: </label>
+      <input id="hero-universo" [(ngModel)]="hero.universo" placeholder="Universo Heroe">
+  </div>
+
+  <div>
+    <label for = "hero-identidad">Identidad: </label>
+      <input id="hero-identidad" [(ngModel)]="hero.identidad" placeholder="Identidad Heroe">
   </div>
 </div>
